@@ -1,87 +1,83 @@
----
-const languagues = [
-    {
-        id: 1,
-        name: "JavaScript",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-    },
-    {
-        id: 2,
-        name: "Python",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-    },
-    {
-        id: 3,
-        name: "PHP",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
-    },
-    {
-        id: 4,
-        name: "C",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png",
-    },
-    {
-        id: 5,
-        name: "C++",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
-    },
-    {
-        id: 6,
-        name: "Perl",
-        image: "https://cdn.freebiesupply.com/logos/large/2x/perl-programming-language-logo-png-transparent.png",
-    },
-    {
-        id: 7,
-        name: "Java",
-        image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png",
-    },
-    {
-        id: 8,
-        name: "Ruby",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png",
-    },
-    {
-        id: 9,
-        name: "Rust",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rustacean-orig-noshadow.svg/220px-Rustacean-orig-noshadow.svg.png",
-    },
-	{
-		id: 10,
-		name: "WebAssembly",
-		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/2048px-WebAssembly_Logo.svg.png",
-	},
-	{
-		id: 11,
-		name: "C#",
-		image: "https://cdn.cdnlogo.com/logos/c/27/c.svg",
-	},
-	{
-		id: 12,
-		name: "Go",
-		image: "https://www.nicepng.com/png/full/380-3801538_go-go-programming-language-logo.png",
-	},
-	{
-		id: 13,
-		name: "Swift",
-		image: "https://cdn-icons-png.flaticon.com/512/732/732250.png",
-	},
-	{
-		id: 14,
-		name: "Dart",
-		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png",
-	},
-	{
-		id: 15,
-		name: "Kotlin",
-		image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png",
-	},
-]
-const random = Math.floor(Math.random() * languagues.length) + 1
-
-return new Response(JSON.stringify(languagues[random]), {
-    status: 200,
-    headers: {
-      "Content-Type": "application/json"
-    }
-});
----
+<body>
+	<script is:inline defer>
+		const languagues = [
+		{
+			id: 1,
+			name: "JavaScript",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+		},
+		{
+			id: 2,
+			name: "Python",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
+		},
+		{
+			id: 3,
+			name: "PHP",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
+		},
+		{
+			id: 4,
+			name: "C",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png",
+		},
+		{
+			id: 5,
+			name: "C++",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+		},
+		{
+			id: 6,
+			name: "Perl",
+			image: "https://cdn.freebiesupply.com/logos/large/2x/perl-programming-language-logo-png-transparent.png",
+		},
+		{
+			id: 7,
+			name: "Java",
+			image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png",
+		},
+		{
+			id: 8,
+			name: "Ruby",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png",
+		},
+		{
+			id: 9,
+			name: "Rust",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rustacean-orig-noshadow.svg/220px-Rustacean-orig-noshadow.svg.png",
+		},
+		{
+			id: 10,
+			name: "WebAssembly",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/2048px-WebAssembly_Logo.svg.png",
+		},
+		{
+			id: 11,
+			name: "C#",
+			image: "https://cdn.cdnlogo.com/logos/c/27/c.svg",
+		},
+		{
+			id: 12,
+			name: "Go",
+			image: "https://www.nicepng.com/png/full/380-3801538_go-go-programming-language-logo.png",
+		},
+		{
+			id: 13,
+			name: "Swift",
+			image: "https://cdn-icons-png.flaticon.com/512/732/732250.png",
+		},
+		{
+			id: 14,
+			name: "Dart",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dart-logo-icon.svg/2048px-Dart-logo-icon.svg.png",
+		},
+		{
+			id: 15,
+			name: "Kotlin",
+			image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png",
+		},
+	]
+	const random = Math.floor(Math.random() * languagues.length) + 1
+	document.querySelector("body").innerHTML = JSON.stringify(languagues[random])
+	</script>
+</body>
